@@ -1,0 +1,128 @@
+.full-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 5rem;
+}
+
+.mark{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/background.png');
+    padding: 1rem 1rem;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    border: solid 5px #F15A29;
+}
+
+.interaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.button{
+    font-family: 'stud-chaos', sans-serif;
+    font-size: 1.5rem;
+    margin: 0px 0.5rem 1rem 0;
+    background-color: rgb(241,90,41,0.8);
+    height: 4rem;
+    width: 10rem;
+    color: #000000;
+    border-radius: 0px 0px 1rem 0px;
+}
+
+.buttons{
+    width: 30%;
+    height: 100%;
+}
+
+
+
+.chargeLogo {
+    display: flex;
+    justify-content: right;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.chargeLogo p {
+    font-family: 'stud-chaos', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 2rem 0 0;
+    color: #ffffff;
+    border-radius: 0px 0px 1rem 0px;
+}
+
+.chargeLogo img{
+    width: 3rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+
+.pannel{
+    padding-left: 2rem;
+    width: 70%;
+    overflow-y: auto;
+    height: 19rem;
+}
+
+.noise{
+    position: relative;
+    overflow: hidden;
+}
+
+.noise ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('/assets/noise.png');
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+
+.noise2{
+    position: relative;
+    overflow: hidden;
+}
+
+.noise2 ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('/assets/noise2.png');
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+
+.selected-button{
+    font-family: 'stud-chaos', sans-serif;
+    font-size: 1.5rem;
+    margin: 0px 0.5rem 1rem 0;
+    background-color: #ffffff;
+    height: 4rem;
+    width: 10rem;
+    color: #000000;
+    border-radius: 0px 0px 1rem 0px;
+}

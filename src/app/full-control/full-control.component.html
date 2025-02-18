@@ -1,0 +1,69 @@
+
+<div class="full-container">
+  <div class="mark">
+    <div class="content">
+
+      <section class="chargeLogo">
+        <img src="assets/chargeLogo.png" alt="charge logo">
+      </section>
+
+      <div class="planet-container">
+        <canvas  class="planet-viewer" #canvas width="400" height="400"></canvas>
+
+        <div class="controlls">
+          <section class="df">
+            <section>
+                <button (click)="moveImage(-steps, 0)"
+                (touchstart)="onHoldStart(0)"
+                (touchend)="onHoldEnd(0)"
+              (mouseleave)="onHoldEnd(0)">
+                  <img src="assets/left.png" alt="">
+                </button>
+              </section>
+
+              <section class="vertical-buttons">
+                <div>
+
+                  <button (click)="moveImage(0, -steps)"
+                  (touchstart)="onHoldStart(1)"
+                  (touchend)="onHoldEnd(1)"
+                (mouseleave)="onHoldEnd(1)">
+                    <img src="assets/up.png" alt="">
+                  </button>
+                  <button (click)="moveImage(0, steps)"
+                  (touchstart)="onHoldStart(3)"
+                  (touchend)="onHoldEnd(3)"
+                  (mouseleave)="onHoldEnd(3)">
+                    <img src="assets/down.png" alt="">
+                  </button>
+                </div>
+              </section>
+
+              <section>
+                <button (click)="moveImage(steps, 0)"
+                (touchstart)="onHoldStart(2)"
+                (touchend)="onHoldEnd(2)"
+              (mouseleave)="onHoldEnd(2)">
+                  <img src="assets/right.png" alt="">
+                </button>
+              </section>
+            </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+    <section class="shift">
+      <section class="location-container">
+        <p class="close"(click)="close()">X</p>
+      </section>
+
+      <button class="location">
+        <p>{{location}}</p>
+      </button>
+    </section>
+
+
+  </div>
+</div>

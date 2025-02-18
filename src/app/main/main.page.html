@@ -1,0 +1,36 @@
+<div class="full-container">
+  <div [ngClass]="{'noise' : isNoise, 'noise2' : !isNoise}" >
+  <div class="mark">
+    <!--conditinal class to noise-->
+
+    <section class="content">
+
+        <section class="chargeLogo">
+          <p>{{dateToShow}}</p>
+          <p>{{batteryLevel}}</p>
+          <img src="assets/chargeLogo.png" alt="charge logo">
+        </section>
+
+      <section class="interaction">
+        <div class="buttons">
+          <!--Delete opacy if is Selected-->
+          <button [ngClass]="{'button' : generalStatus != 'Community',  'selected-button' : generalStatus == 'Community'}"  (click)="changeStatus('Community')">Community</button>
+          <button [ngClass]="{'button' : generalStatus != 'Controls',  'selected-button' : generalStatus == 'Controls'}" (click)="changeStatus('Controls')">Controls</button>
+          <button [ngClass]="{'button' : generalStatus != 'Maps',  'selected-button' : generalStatus == 'Maps'}" (click)="changeStatus('Maps')">Maps</button>
+          <button [ngClass]="{'button' : generalStatus != 'User',  'selected-button' : generalStatus == 'User'}" (click)="changeStatus('User')">User</button>
+        </div>
+        <div class="pannel" #pannel>
+          <app-controls *ngIf="generalStatus == 'Controls'"></app-controls>
+          <app-greeting *ngIf="generalStatus=='welcome' "></app-greeting>
+          <app-maps *ngIf="generalStatus == 'Maps'"></app-maps>
+          <app-comunity-content *ngIf="generalStatus == 'Community'"></app-comunity-content>
+          <app-user *ngIf="generalStatus == 'User'"></app-user>
+        </div>
+      </section>
+
+
+    </section>
+    </div>
+  </div>
+  </div>
+

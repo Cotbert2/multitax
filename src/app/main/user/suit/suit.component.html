@@ -1,0 +1,47 @@
+<div class="full-container">
+  <img src="assets/side-spaceman.png" alt="side space man" class="spaceman">
+
+  <section class="acelerations">
+    <p>Acelerations</p>
+
+    <section class="axis">
+      <ion-label>X Axis:</ion-label>
+      <ion-progress-bar [value]="acceleration.x" ></ion-progress-bar>
+    </section>
+
+    <section class="axis">
+      <ion-label>Y Axis:</ion-label>
+      <ion-progress-bar [value]="acceleration.y"></ion-progress-bar>
+    </section>
+
+    <section class="axis">
+      <ion-label>Z Axis:</ion-label>
+      <ion-progress-bar [value]="acceleration.z"></ion-progress-bar>
+    </section>
+
+    <section class="radiation-container">
+      <img src="assets/Radiation.png" alt="radiation sensor" class="radiation">
+    </section>
+  </section>
+
+
+  <section>
+    <p>C/F Temperature</p>
+    <section class="temperature">
+      <ion-progress-bar  [value]="temperature"></ion-progress-bar>
+    </section>
+
+    <section>
+      <section class="pulso">
+        <img src="assets/heart_red.png" alt="reds heart">
+        <p>{{pulse1}}</p>
+      </section>
+      <section class="pulso">
+        <img src="assets/heart_white.png" alt="reds heart">
+        <p>{{pulse2}}</p>
+      </section>
+    </section>
+  </section>
+
+    <!--Aceleremother test-->
+</div>

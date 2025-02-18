@@ -1,0 +1,55 @@
+.full-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.spaceman{
+    height: 12rem;
+}
+
+.sensors{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.acelerations{
+    margin: 1rem;
+}
+
+
+*{
+    font-family: 'stud-chaos', sans-serif;
+
+}
+
+.temperature{
+    padding: 1rem;
+    background: url('/assets/temperature.png');
+    background-size: cover;
+}
+
+.pulso{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pulso img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.radiation-container{
+    height: 40%;
+    width:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.radiation{
+    height: 100%;
+}
